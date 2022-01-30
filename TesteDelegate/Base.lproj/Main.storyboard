@@ -1,24 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TesteDelegate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31y-vD-bud">
+                                <rect key="frame" x="16" y="89" width="382" height="40"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="user" title="Cadastro">
+                                    <backgroundConfiguration key="background" cornerRadius="21">
+                                        <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNX-RZ-G1h">
+                                <rect key="frame" x="16" y="341" width="382" height="25"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cadastrando. Aguarde...">
+                                    <backgroundConfiguration key="background" cornerRadius="21">
+                                        <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvR-oQ-TfS">
+                                <rect key="frame" x="78" y="228" width="258" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fBY-xT-Rzh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cadastro">
+                                    <backgroundConfiguration key="background" image="gradient"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTD-W4-deA">
+                                <rect key="frame" x="20" y="532" width="374" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="8JB-p0-1iq"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Ajustes" image="settings">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mD5-Ko-3Ib">
+                                <rect key="frame" x="20" y="476" width="374" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="CNL-72-zf1"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Contatos" image="user">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBh-Qd-VX6">
+                                <rect key="frame" x="20" y="586" width="374" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="HEp-pg-RrZ"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Câmera" image="camera">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trL-ej-SZe">
+                                <rect key="frame" x="20" y="694" width="374" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="8vk-iD-m1S"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Filmes" image="film">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dN-Rk-PRH">
+                                <rect key="frame" x="16" y="637" width="378" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="LWu-jf-AsH"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Mensagens" image="message">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8dN-Rk-PRH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="5Kq-82-Nst"/>
+                            <constraint firstItem="OBh-Qd-VX6" firstAttribute="centerX" secondItem="8dN-Rk-PRH" secondAttribute="centerX" id="7Hk-Ne-hYd"/>
+                            <constraint firstItem="31y-vD-bud" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="8pa-nd-8if"/>
+                            <constraint firstItem="8dN-Rk-PRH" firstAttribute="top" secondItem="OBh-Qd-VX6" secondAttribute="bottom" constant="32" id="9u8-NY-MCn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mD5-Ko-3Ib" secondAttribute="trailing" constant="20" id="BrI-71-Peh"/>
+                            <constraint firstItem="sTD-W4-deA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="Fhf-JZ-AUx"/>
+                            <constraint firstItem="31y-vD-bud" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HKn-s9-6f9"/>
+                            <constraint firstItem="mD5-Ko-3Ib" firstAttribute="top" secondItem="uNX-RZ-G1h" secondAttribute="bottom" constant="110" id="JO3-Re-TP0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="31y-vD-bud" secondAttribute="bottom" constant="733" id="PbZ-NI-OPU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FvR-oQ-TfS" secondAttribute="bottom" constant="594" id="Qjb-cP-0N7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="trL-ej-SZe" secondAttribute="bottom" constant="146" id="QuN-5d-X9U"/>
+                            <constraint firstItem="mD5-Ko-3Ib" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="T80-FD-iER"/>
+                            <constraint firstItem="FvR-oQ-TfS" firstAttribute="leading" secondItem="31y-vD-bud" secondAttribute="leading" constant="62" id="ViL-61-GEk"/>
+                            <constraint firstItem="trL-ej-SZe" firstAttribute="top" secondItem="8dN-Rk-PRH" secondAttribute="bottom" constant="32" id="YVA-zG-fA4"/>
+                            <constraint firstItem="sTD-W4-deA" firstAttribute="top" secondItem="mD5-Ko-3Ib" secondAttribute="bottom" constant="32" id="a6u-ux-wd9"/>
+                            <constraint firstItem="OBh-Qd-VX6" firstAttribute="top" secondItem="sTD-W4-deA" secondAttribute="bottom" constant="32" id="bgc-pm-9xR"/>
+                            <constraint firstItem="uNX-RZ-G1h" firstAttribute="trailing" secondItem="31y-vD-bud" secondAttribute="trailing" id="drk-r3-uIy"/>
+                            <constraint firstItem="OBh-Qd-VX6" firstAttribute="leading" secondItem="mD5-Ko-3Ib" secondAttribute="leading" id="eQq-bK-uCu"/>
+                            <constraint firstItem="8dN-Rk-PRH" firstAttribute="centerX" secondItem="trL-ej-SZe" secondAttribute="centerX" id="fIq-Us-OdF"/>
+                            <constraint firstItem="8dN-Rk-PRH" firstAttribute="trailing" secondItem="mD5-Ko-3Ib" secondAttribute="trailing" id="gR3-ga-JhN"/>
+                            <constraint firstItem="uNX-RZ-G1h" firstAttribute="top" secondItem="FvR-oQ-TfS" secondAttribute="bottom" constant="73" id="gcs-qw-AeM"/>
+                            <constraint firstItem="uNX-RZ-G1h" firstAttribute="leading" secondItem="31y-vD-bud" secondAttribute="leading" id="lSa-2Z-d0b"/>
+                            <constraint firstItem="sTD-W4-deA" firstAttribute="centerX" secondItem="OBh-Qd-VX6" secondAttribute="centerX" id="rqX-I6-TMs"/>
+                            <constraint firstItem="31y-vD-bud" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tW3-ng-VE3"/>
+                            <constraint firstItem="trL-ej-SZe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="vUR-oU-jhI"/>
+                            <constraint firstItem="FvR-oQ-TfS" firstAttribute="trailing" secondItem="31y-vD-bud" secondAttribute="trailing" constant="-62" id="zIb-gx-kyU"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" width="22" height="22"/>
+        <image name="film" width="22" height="22"/>
+        <image name="gradient" width="150" height="40"/>
+        <image name="message" width="22" height="22"/>
+        <image name="settings" width="22" height="22"/>
+        <image name="user" width="22" height="22"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
