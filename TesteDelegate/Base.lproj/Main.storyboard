@@ -16,125 +16,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31y-vD-bud">
-                                <rect key="frame" x="16" y="89" width="382" height="40"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="user" title="Cadastro">
-                                    <backgroundConfiguration key="background" cornerRadius="21">
-                                        <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNX-RZ-G1h">
-                                <rect key="frame" x="16" y="341" width="382" height="25"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Cadastrando. Aguarde...">
-                                    <backgroundConfiguration key="background" cornerRadius="21">
-                                        <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvR-oQ-TfS">
-                                <rect key="frame" x="78" y="228" width="258" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="fBY-xT-Rzh"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Cadastro">
-                                    <backgroundConfiguration key="background" image="gradient"/>
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
-                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTD-W4-deA">
-                                <rect key="frame" x="20" y="532" width="374" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="8JB-p0-1iq"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="systemPinkColor"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Ajustes" image="settings">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mD5-Ko-3Ib">
-                                <rect key="frame" x="20" y="476" width="374" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="CNL-72-zf1"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="systemPinkColor"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Contatos" image="user">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBh-Qd-VX6">
-                                <rect key="frame" x="20" y="586" width="374" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="HEp-pg-RrZ"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="systemPinkColor"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Câmera" image="camera">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trL-ej-SZe">
-                                <rect key="frame" x="20" y="694" width="374" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="8vk-iD-m1S"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="systemPinkColor"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Filmes" image="film">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dN-Rk-PRH">
-                                <rect key="frame" x="16" y="637" width="378" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="LWu-jf-AsH"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="systemPinkColor"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Mensagens" image="message">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3fW-qz-qe2">
+                                <rect key="frame" x="16" y="96" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hxt-tl-ZQ1">
+                                <rect key="frame" x="16" y="147" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ATj-eo-iOP">
+                                <rect key="frame" x="16" y="200" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <constraints>
-                            <constraint firstItem="8dN-Rk-PRH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="5Kq-82-Nst"/>
-                            <constraint firstItem="OBh-Qd-VX6" firstAttribute="centerX" secondItem="8dN-Rk-PRH" secondAttribute="centerX" id="7Hk-Ne-hYd"/>
-                            <constraint firstItem="31y-vD-bud" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="8pa-nd-8if"/>
-                            <constraint firstItem="8dN-Rk-PRH" firstAttribute="top" secondItem="OBh-Qd-VX6" secondAttribute="bottom" constant="32" id="9u8-NY-MCn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mD5-Ko-3Ib" secondAttribute="trailing" constant="20" id="BrI-71-Peh"/>
-                            <constraint firstItem="sTD-W4-deA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="Fhf-JZ-AUx"/>
-                            <constraint firstItem="31y-vD-bud" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HKn-s9-6f9"/>
-                            <constraint firstItem="mD5-Ko-3Ib" firstAttribute="top" secondItem="uNX-RZ-G1h" secondAttribute="bottom" constant="110" id="JO3-Re-TP0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="31y-vD-bud" secondAttribute="bottom" constant="733" id="PbZ-NI-OPU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FvR-oQ-TfS" secondAttribute="bottom" constant="594" id="Qjb-cP-0N7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="trL-ej-SZe" secondAttribute="bottom" constant="146" id="QuN-5d-X9U"/>
-                            <constraint firstItem="mD5-Ko-3Ib" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="T80-FD-iER"/>
-                            <constraint firstItem="FvR-oQ-TfS" firstAttribute="leading" secondItem="31y-vD-bud" secondAttribute="leading" constant="62" id="ViL-61-GEk"/>
-                            <constraint firstItem="trL-ej-SZe" firstAttribute="top" secondItem="8dN-Rk-PRH" secondAttribute="bottom" constant="32" id="YVA-zG-fA4"/>
-                            <constraint firstItem="sTD-W4-deA" firstAttribute="top" secondItem="mD5-Ko-3Ib" secondAttribute="bottom" constant="32" id="a6u-ux-wd9"/>
-                            <constraint firstItem="OBh-Qd-VX6" firstAttribute="top" secondItem="sTD-W4-deA" secondAttribute="bottom" constant="32" id="bgc-pm-9xR"/>
-                            <constraint firstItem="uNX-RZ-G1h" firstAttribute="trailing" secondItem="31y-vD-bud" secondAttribute="trailing" id="drk-r3-uIy"/>
-                            <constraint firstItem="OBh-Qd-VX6" firstAttribute="leading" secondItem="mD5-Ko-3Ib" secondAttribute="leading" id="eQq-bK-uCu"/>
-                            <constraint firstItem="8dN-Rk-PRH" firstAttribute="centerX" secondItem="trL-ej-SZe" secondAttribute="centerX" id="fIq-Us-OdF"/>
-                            <constraint firstItem="8dN-Rk-PRH" firstAttribute="trailing" secondItem="mD5-Ko-3Ib" secondAttribute="trailing" id="gR3-ga-JhN"/>
-                            <constraint firstItem="uNX-RZ-G1h" firstAttribute="top" secondItem="FvR-oQ-TfS" secondAttribute="bottom" constant="73" id="gcs-qw-AeM"/>
-                            <constraint firstItem="uNX-RZ-G1h" firstAttribute="leading" secondItem="31y-vD-bud" secondAttribute="leading" id="lSa-2Z-d0b"/>
-                            <constraint firstItem="sTD-W4-deA" firstAttribute="centerX" secondItem="OBh-Qd-VX6" secondAttribute="centerX" id="rqX-I6-TMs"/>
-                            <constraint firstItem="31y-vD-bud" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tW3-ng-VE3"/>
-                            <constraint firstItem="trL-ej-SZe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="vUR-oU-jhI"/>
-                            <constraint firstItem="FvR-oQ-TfS" firstAttribute="trailing" secondItem="31y-vD-bud" secondAttribute="trailing" constant="-62" id="zIb-gx-kyU"/>
+                            <constraint firstItem="3fW-qz-qe2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8Ab-Pp-iVC"/>
+                            <constraint firstItem="ATj-eo-iOP" firstAttribute="top" secondItem="hxt-tl-ZQ1" secondAttribute="bottom" constant="19" id="BRW-NI-HGv"/>
+                            <constraint firstItem="hxt-tl-ZQ1" firstAttribute="top" secondItem="3fW-qz-qe2" secondAttribute="bottom" constant="17" id="FjH-az-hWl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ATj-eo-iOP" secondAttribute="trailing" constant="16" id="QZh-IS-2UL"/>
+                            <constraint firstItem="3fW-qz-qe2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="QgD-li-PbU"/>
+                            <constraint firstItem="3fW-qz-qe2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="bot-iW-phc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3fW-qz-qe2" secondAttribute="trailing" constant="16" id="hvO-Of-1qK"/>
+                            <constraint firstItem="hxt-tl-ZQ1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jdv-AE-SHf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hxt-tl-ZQ1" secondAttribute="trailing" constant="16" id="p95-DH-rC8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3fW-qz-qe2" secondAttribute="trailing" constant="16" id="rTe-ca-RxY"/>
+                            <constraint firstItem="ATj-eo-iOP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uCb-Kx-nJd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tfEmail" destination="hxt-tl-ZQ1" id="tDn-ah-hdU"/>
+                        <outlet property="tfName" destination="3fW-qz-qe2" id="AoW-ew-XJX"/>
+                        <outlet property="tfPassword" destination="ATj-eo-iOP" id="MKA-Ow-KTb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,26 +60,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="camera" width="22" height="22"/>
-        <image name="film" width="22" height="22"/>
-        <image name="gradient" width="150" height="40"/>
-        <image name="message" width="22" height="22"/>
-        <image name="settings" width="22" height="22"/>
-        <image name="user" width="22" height="22"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="secondarySystemFillColor">
-            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
