@@ -7,18 +7,35 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
- 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-    }
+    @IBOutlet var tfName: UITextField!
+    @IBOutlet var tfEmail: UITextField!
+    @IBOutlet var tfPassword: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+        tfName.delegate = self
+        tfEmail.delegate = self
+        tfPassword.delegate = self
     }
-
-
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == tfName {
+            tfEmail.becomeFirstResponder()
+        }
+        else if textField == tfEmail {
+            tfPassword.becomeFirstResponder()
+        } else {
+            print("Enviando dados ao servidor")
+            textField.resignFirstResponder()
+        }
+        return true
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        return !textField.text!.isEmpty
+    }
 }
 
